@@ -20,6 +20,9 @@ body {
     font-family: $font-text;
 }
 
+
+/* Splash */
+
 .splash {
     height: 100vh;
     position: relative;
@@ -29,19 +32,20 @@ body {
     color: white;
 }
 
-.container .navbar, .logo {
+.container {
+    .navbar, .logo {
     display: inline-block;
+}
 }
 
 .logo {
-    margin: 0 160px;
     font-family: 'Yellowtail', cursive;
     font-size: 30px;
     color: $color-main
 }
 
 .navbar {
-    margin: 0 auto;
+    margin: 0 0 0 auto;
 }
 
 nav {
@@ -50,15 +54,16 @@ nav {
 
 nav {
     .container {
-
-    display: inline-block;
-    display:flex;
+        display: inline-block;
+        display:flex;
     }
 }
     
-.navigation ul {
+.navigation {
+            ul {
             list-style-type: none;
             justify-content: flex-end;
+}
 }
 
 .navigation {
@@ -69,12 +74,16 @@ nav {
         }
 }
 
-.navigation li a {
+.navigation {
+        li {
+            a {
             text-decoration: none;
             color: white;
             &:hover {
                 color: $color-hover;
             }
+            }
+        }
 }
 
 .splash-inner {
@@ -155,6 +164,10 @@ nav {
 }
 
 .card {
+    padding: 30px 20px;
+}
+
+.card {
     i{
     font-size: 30px;
     background: white;
@@ -197,6 +210,7 @@ nav {
 .description {
     background-color: white;
     text-align: center;
+    padding: 30px 0;
 }
 
 .description {
@@ -211,46 +225,53 @@ nav {
     }
 }
 
-.gallery .container {
-    padding-bottom: 50px;
+.gallery {
+    .container {
+        padding-bottom: 50px;
+    }
 }
 
 .box {
     padding: 50px 20px;
 }
 
-.box img {
+.box {
+    img {
     width: 100%;
     height: 100%; 
     object-fit: cover;
-}
-
-.description {
-    padding: 30px 0;
+    }
 }
 
 /* Footer */
 
 .social-media {
         p{
-            padding-top: 55px;
+        padding-top: 55px;
+        margin-left:auto;
         }
 }
-.social-media li {
-    margin: 48px 10px; 
-    display: inline-block;
-    font-size: 0;
-    list-style-type: none;
-    align-items: center;
+
+ 
+.social-media {
+    li {
+        margin: 48px 5px; 
+        display: inline-block;
+        font-size: 0;
+        list-style-type: none;
+        align-items: center;
+    }
 }
 
-.social-media i {
-    font-size: 25px;
-    background: black;
-    width: 50px;
-    height: 50px;
-    color: #ffffff;
-    border-radius: 50%;    
-    text-align: center;
-    padding: 11px;
+.social-media {
+    i {
+        font-size: 25px;
+        background: black;
+        width: 50px;
+        height: 50px;
+        color: #ffffff;
+        border-radius: 50%;    
+        text-align: center;
+        padding: 11px;
+    }
 }
