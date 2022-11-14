@@ -3,6 +3,7 @@
 $font-header: 'Lora', serif;
 $font-text: 'Raleway', sans-serif;
 
+$color-main: #ffd32a;
 $color-hover:gray;
 
 
@@ -17,7 +18,6 @@ body {
     font-size: 16px;
     line-height: 1.7;
     font-family: $font-text;
-    color: white;
 }
 
 .splash {
@@ -26,6 +26,7 @@ body {
     background-image: url(https://images.pexels.com/photos/277319/pexels-photo-277319.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-position: center center;
     background-size: cover;
+    color: white;
 }
 
 .container .navbar, .logo {
@@ -36,7 +37,7 @@ body {
     margin: 0 160px;
     font-family: 'Yellowtail', cursive;
     font-size: 30px;
-    color: #ffd32a;
+    color: $color-main
 }
 
 .navbar {
@@ -113,10 +114,10 @@ nav {
     text-decoration: none;
     /*cursor: pointer;*/
     color: white;
-    background-color: #ffd32a;
+    background-color: $color-main;
     &:hover {
         color: $color-hover;
-}
+    }
 }
 
 .splash-inner {
@@ -124,4 +125,65 @@ nav {
                 display: flex;
                 justify-content: center;
             }
+}
+
+/* Services */
+
+.title {
+    padding-top: 50px;
+}
+
+.title, .card {
+    text-align: center;
+}
+
+.title {
+    h2{
+        font-size: 40px;
+        font-weight: 700;
+        font-style: bold;
+        margin-bottom: 0;
+    }
+}
+
+.title {
+    p {
+        margin-top: 0;
+        font-style: italic;
+        font-family: $font-header;
+    }
+}
+
+.card {
+    i{
+    font-size: 30px;
+    background: white;
+    width: 60px;
+    height: 60px;
+    line-height: 50px;
+    color: $color-main;
+    border-radius: 50%;
+    border-width: 3px;
+    border-style: solid;
+    }
+}
+
+.card {
+    a{
+        font-size: 0;
+        list-style-type: none;
+    }
+}
+
+.card {
+    p {
+        font-style: italic;
+        font-family: $font-header;
+    }
+}
+
+.card {
+    h3{
+        margin-bottom: 0;
+    }
 }
